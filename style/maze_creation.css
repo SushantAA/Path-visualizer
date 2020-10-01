@@ -1,0 +1,51 @@
+body{
+    background-color: aquamarine;
+}
+#id{
+    /* justify-content: center; */
+}
+div div{
+    line-height: 0;
+}
+.normal_square{
+    background-color: azure;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 1px solid blueviolet;
+    display: inline-block;
+}
+.wall_square{
+    background-color: black;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 1px solid blueviolet;
+    display: inline-block;
+}
+.start_square{
+    background-color: greenyellow;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 1px solid blueviolet;
+    display: inline-block;
+}
+.end_square{
+    background-color: palevioletred;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 1px solid blueviolet;
+    display: inline-block;
+}
+.move_square{
+    background-color: yellow;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 1px solid blueviolet;
+    display: inline-block;
+}
+.visited_square{
+    background-color: yellow;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 1px solid blueviolet;
+    display: inline-block;
+}
