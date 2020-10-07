@@ -2,6 +2,24 @@ alert('bfs');
 
 let shortest_distance = 100000;
 
+let visited_animate = [];
+
+document.querySelector('#animate').addEventListener('click',function(){
+    console.log(visited_animate);
+    let i=0;
+    let f = false;
+    let rep = setInterval(function(){
+        let id = visited_animate[i];
+        console.log(id);
+        document.getElementById(id).classList.remove('normal_square');
+        document.getElementById(id).classList.add('visited_square');
+        i = i+1;
+        if(i==visited_animate.length)   f = true;
+    },200);
+    if(f == true)    clearInterval(rep);
+});
+
+
 let bfs = (start_vertical,start_horizontal,distance,visited) =>{
     if( shortest_distance!=100000 && distance>shortest_distance)  return;
     let j = start_vertical;
@@ -21,8 +39,9 @@ let bfs = (start_vertical,start_horizontal,distance,visited) =>{
 
     visited.set(id,true);
 
-    document.getElementById(id).classList.remove('normal_square');
-    document.getElementById(id).classList.add('visited_square');
+    visited_animate.push(id);
+    // document.getElementById(id).classList.remove('normal_square');
+    // document.getElementById(id).classList.add('visited_square');
 
     if(i>0 && maze_array[j][i-1][4]!=1){
         maze_array[j][i-1][5] = Math.min(maze_array[j][i-1][5],distance + 1);

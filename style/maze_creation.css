@@ -41,6 +41,15 @@ div div{
     height: 1.8rem;
     border: 1px solid blueviolet;
     display: inline-block;
+
+    animation-name: move_square_animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
 }
 .visited_square{
     background-color: yellow;
@@ -48,4 +57,13 @@ div div{
     height: 1.8rem;
     border: 1px solid blueviolet;
     display: inline-block;
+
+    animation-name: visited_square_animation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
 }
