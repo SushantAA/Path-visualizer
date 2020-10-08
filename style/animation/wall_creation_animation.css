@@ -1,0 +1,17 @@
+@keyframes wall_creation_animation{
+    0% {
+        transform: scale(.3);
+        background-color: black;
+      }
+    
+      50% {
+        transform: scale(1.2);
+        background-color: black;
+      }
+    
+      100% {
+        transform: scale(1.0);
+        background-color:black;
+      }
+
+}

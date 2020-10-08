@@ -3,13 +3,13 @@
 
 
 alert('start end point');
-let start_square_vertical = 0;
-let start_square_horizonatal = 0;
-let end_square_vertical = 10;
+let start_square_vertical = 7;
+let start_square_horizonatal = 7;
+let end_square_vertical = 9;
 let end_square_horizonatal = 20;
 
-let start_square_id = '0,0';
-let end_square_id = '10,20';
+let start_square_id = '7,7';
+let end_square_id = '9,20';
 let start_square_element = document.getElementById(start_square_id);
 let end_square_element = document.getElementById(end_square_id);
 start_square_element.classList.remove('normal_square');

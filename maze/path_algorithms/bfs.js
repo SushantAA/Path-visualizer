@@ -13,10 +13,21 @@ document.querySelector('#animate').addEventListener('click',function(){
         console.log(id);
         document.getElementById(id).classList.remove('normal_square');
         document.getElementById(id).classList.add('visited_square');
+        if(id == start_square_id){
+            start_square_element.classList.remove('visited_square');
+            start_square_element.classList.add('start_square');
+        }
         i = i+1;
-        if(i==visited_animate.length)   f = true;
-    },200);
-    if(f == true)    clearInterval(rep);
+        if(i==visited_animate.length) {
+              f = true;
+              clearInterval(rep);    
+              visited_animate = [];
+                
+            start_square_element.classList.remove('visited_square');
+            start_square_element.classList.add('start_square');
+            }
+    },50);
+
 });
 
 
