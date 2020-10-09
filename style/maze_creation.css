@@ -35,14 +35,14 @@ div div{
     animation-play-state: running;
 }
 .start_square{
-    background-color: greenyellow;
+    background-color: #9c1de7;
     width: 1.8rem;
     height: 1.8rem;
     border: 1px solid blueviolet;
     display: inline-block;
 }
 .end_square{
-    background-color: palevioletred;
+    background-color: #ff304f;
     width: 1.8rem;
     height: 1.8rem;
     border: 1px solid blueviolet;

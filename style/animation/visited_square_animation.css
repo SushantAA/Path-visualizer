@@ -1,28 +1,28 @@
 @keyframes visited_square_animation{
     0% {
         transform: scale(.3);
-        background-color: rebeccapurple;
+        background-color: #43dde6;
       }
     
       25% {
         transform: scale(1.2);
-        background-color: red;
+        background-color: #a7ff83;
       }
     
       50% {
         transform: scale(1.5);
-        background-color: red;
+        background-color: #a7ff83;
       }
 
       
       75% {
         transform: scale(1.2);
-        background-color: red;
+        background-color: #a7ff83;
       }
 
       100% {
         transform: scale(1.0);
-        background-color:rebeccapurple;
+        background-color:#43dde6;
       }
 
 }

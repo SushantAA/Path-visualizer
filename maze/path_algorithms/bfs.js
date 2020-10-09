@@ -11,6 +11,16 @@ document.querySelector('#animate').addEventListener('click',function(){
     let rep = setInterval(function(){
         let id = visited_animate[i];
         console.log(id);
+        
+        if(i==visited_animate.length) {
+            f = true;
+            clearInterval(rep);    
+            visited_animate = [];
+              return;
+          start_square_element.classList.remove('visited_square');
+          start_square_element.classList.add('start_square');
+       }
+        
         document.getElementById(id).classList.remove('normal_square');
         document.getElementById(id).classList.add('visited_square');
         if(id == start_square_id){
@@ -18,14 +28,7 @@ document.querySelector('#animate').addEventListener('click',function(){
             start_square_element.classList.add('start_square');
         }
         i = i+1;
-        if(i==visited_animate.length) {
-              f = true;
-              clearInterval(rep);    
-              visited_animate = [];
-                
-            start_square_element.classList.remove('visited_square');
-            start_square_element.classList.add('start_square');
-            }
+        
     },50);
 
 });

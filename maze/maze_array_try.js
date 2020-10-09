@@ -4,6 +4,8 @@ for(let i=0;i<vertical_height;i++){
     let maze_horizontal_array = new Array(horizontal_width);
     maze_array[i] = maze_horizontal_array;
 }
+
+let maze_array_first_fill = () =>{
 for(let j=0;j<vertical_height;j++){
     for(let i=0;i<horizontal_width;i++){
         let neighbour_list_array = new Array(5);
@@ -33,4 +35,6 @@ for(let j=0;j<vertical_height;j++){
         maze_array[j][i-1][1]=1;
     }
 }
+}
+maze_array_first_fill();
 
