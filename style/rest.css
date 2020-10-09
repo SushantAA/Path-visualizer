@@ -1,17 +1,9 @@
-button{
-    color: white;
-    padding: 1rem;
-    background-color:green;
-    border-radius: 1rem;
-    border: 2px solid black;
-    font-size: 14px;
-}
-button:hover{
-    background-color: yellowgreen;
-}
-#upper_bar{
-    text-align: center;
+#body_bg{
+    background-color: white;
 }
 h1{
-    margin: 1rem;
+    font-family: 'Sansita Swashed', cursive;
+    color: darkblue;
 }
+
+
