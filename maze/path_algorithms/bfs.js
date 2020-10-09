@@ -30,8 +30,14 @@ document.querySelector('#animate').addEventListener('click',function(){
 
 });
 
+let dfs_complete = false;
 
 let bfs = (start_vertical,start_horizontal,distance,visited) =>{
+    if(dfs_complete)        return ;
+    if(start_vertical==end_square_vertical && start_horizontal ==end_square_horizonatal){
+        console.log('dfs complete'); 
+        dfs_complete = true;     
+        return;}
     if( shortest_distance!=100000 && distance>shortest_distance)  return;
     let j = start_vertical;
     let i = start_horizontal;
@@ -76,24 +82,28 @@ let bfs = (start_vertical,start_horizontal,distance,visited) =>{
         // maze_array[j][i-1][5] = Math.min(maze_array[j][i-1][5],maze_array[j][i][5] + 1);
         bfs(j,i-1,maze_array[j][i-1][5],visited);
     }
+    if(dfs_complete)        return ;
     if(j>0 && maze_array[j-1][i][4]!=1){
         // maze_array[j-1][i][5] = Math.min(maze_array[j-1][i][5],maze_array[j][i][5] + 1);
         bfs(j-1,i,maze_array[j-1][i][5],visited);
     }
+    if(dfs_complete)        return ;
     if(i<horizontal_width-1 && maze_array[j][i+1][4]!=1){    
         // maze_array[j][i+1][5] = Math.min(maze_array[j][i+1][5],maze_array[j][i][5] + 1);
         bfs(j,i+1,maze_array[j][i+1][5],visited);
     }
+    if(dfs_complete)        return ;
     if(j<vertical_height-1 && maze_array[j+1][i][4]!=1 ){
         // maze_array[j+1][i][5] = Math.min(maze_array[j+1][i][5],maze_array[j][i][5] + 1);
         bfs(j+1,i,maze_array[j+1][i][5],visited);
     }
+    if(dfs_complete)        return ;
 }
 
 document.querySelector('#bfs').addEventListener('click',function(){
     let rere = new Map();
     rere.set('-1,-1',true);
-    bfs(0,0,0,rere);
+    bfs(start_square_vertical,start_square_horizonatal,0,rere);
     console.log('shortes distance = ', shortest_distance);
 });
 
