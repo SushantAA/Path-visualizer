@@ -1,5 +1,9 @@
 body{
-    background-color: aquamarine;
+    background-color: #FFC107;
+}
+#maze{
+    margin-top: 1rem;
+    text-align: center;
 }
 #id{
     /* justify-content: center; */
@@ -76,3 +80,4 @@ div div{
     animation-fill-mode: forwards;
     animation-play-state: running;
 }
+
