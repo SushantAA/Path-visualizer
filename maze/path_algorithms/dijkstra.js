@@ -1,10 +1,10 @@
 alert('dijkstra');
+
 let dijkstra = () =>{
-    let queue = [];
-    
-    while(queue.length==0){
-        
-    }
+
+let queue = [];
+
+while(queue.length==0){}
 
 }
 
