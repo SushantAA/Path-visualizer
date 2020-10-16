@@ -8,11 +8,11 @@ for(let i=0;i<vertical_height;i++){
 let maze_array_first_fill = () =>{
 for(let j=0;j<vertical_height;j++){
     for(let i=0;i<horizontal_width;i++){
-        let neighbour_list_array = new Array(5);
+        let neighbour_list_array = new Array(6);
         for(let k=0;k<5;k++){
             neighbour_list_array[k] = 0;
         }
-        neighbour_list_array[5] = 100000;
+        neighbour_list_array[5] = 1;
         maze_array[j][i] = neighbour_list_array;
         // 0 ->up
         // 1 ->right

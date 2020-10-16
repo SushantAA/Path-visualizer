@@ -1,0 +1,28 @@
+@keyframes min_node_square_animation{
+    0% {
+        transform: scale(.3);
+        background-color: orange;
+      }
+    
+      25% {
+        transform: scale(1.2);
+        background-color:orangered;
+      }
+    
+      50% {
+        transform: scale(1.5);
+        background-color: orangered;
+      }
+
+      
+      75% {
+        transform: scale(1.2);
+        background-color: orangered;
+      }
+
+      100% {
+        transform: scale(1.0);
+        background-color:orange;
+      }
+
+}
