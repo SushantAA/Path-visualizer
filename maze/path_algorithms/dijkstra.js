@@ -48,13 +48,13 @@ let dijkstra = () =>{
 
         if(j>0){
             let tid =make_id(j-1,i);
-            if((!distance.has(tid))){
+            if((!distance.has(tid)) && maze_array[j-1][i][4]!=1){
                     distance.set(tid,d+maze_array[j-1][i][5]);
                     parent.set(tid,id);
                     arr.push(tid);
             }
             else{ 
-                if(((d+maze_array[j-1][i][5]) <distance.get(tid))){
+                if(((d+maze_array[j-1][i][5]) <distance.get(tid)) && maze_array[j-1][i][4]!=1){
                     distance.delete(tid);
                     distance.set(tid,d+maze_array[j-1][i][5]);
                     parent.delete(tid);
@@ -65,13 +65,13 @@ let dijkstra = () =>{
         }
         if(i>0){
             let tid =make_id(j,i-1);
-            if((!distance.has(tid))){
+            if((!distance.has(tid)) && maze_array[j][i-1][4]!=1){
                     distance.set(tid,d+maze_array[j][i-1][5]);
                     parent.set(tid,id);
                     arr.push(tid);
             }
             else{ 
-                if(((d+maze_array[j][i-1][5]) <distance.get(tid))){
+                if(((d+maze_array[j][i-1][5]) <distance.get(tid)) && maze_array[j][i-1][4]!=1){
                     distance.delete(tid);
                     distance.set(tid,d+maze_array[j][i-1][5]);
                     parent.delete(tid);
@@ -82,13 +82,13 @@ let dijkstra = () =>{
         }
         if(j<vertical_height-1){
             let tid =make_id(j+1,i);
-            if((!distance.has(tid))){
+            if((!distance.has(tid)) && maze_array[j+1][i][4]!=1){
                     distance.set(tid,d+maze_array[j+1][i][5]);
                     parent.set(tid,id);
                     arr.push(tid);
             }
             else{ 
-                if(((d+maze_array[j+1][i][5]) <distance.get(tid))){
+                if(((d+maze_array[j+1][i][5]) <distance.get(tid)) && maze_array[j+1][i][4]!=1){
                     distance.delete(tid);
                     distance.set(tid,d+maze_array[j+1][i][5]);
                     parent.delete(tid);
@@ -99,13 +99,13 @@ let dijkstra = () =>{
         }
         if(i<horizontal_width-1){
             let tid =make_id(j,i+1);
-            if((!distance.has(tid))){
+            if((!distance.has(tid)) && maze_array[j][i+1][4]!=1){
                     distance.set(tid,d+maze_array[j][i+1][5]);
                     parent.set(tid,id);
                     arr.push(tid);
             }
             else{ 
-                if(((d+maze_array[j][i+1][5]) <distance.get(tid))){
+                if(((d+maze_array[j][i+1][5]) <distance.get(tid)) && maze_array[j][i+1][4]!=1){
                     distance.delete(tid);
                     distance.set(tid,d+maze_array[j][i+1][5]);
                     parent.delete(tid);
@@ -136,6 +136,6 @@ document.querySelector('#dijkstra').addEventListener('click',function(){
     console.log('dijkstra end');
     console.log("min node animation start");
     // visited_node_animation_function();
-    display_min_distance_node_animation();
+    // display_min_distance_node_animation();
     console.log("min node animation end");
 });

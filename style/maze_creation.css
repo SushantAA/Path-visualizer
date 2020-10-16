@@ -81,13 +81,13 @@ div div{
     animation-play-state: running;
 }
 .min_node_square{
-    ackground-color: orange;
+    background-color: orange;
     width: 1.8rem;
     height: 1.8rem;
     border: 1px solid blueviolet;
     display: inline-block;
 
-    animation-name: visited_square_animation;
+    animation-name: min_node_square_animation;
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
     animation-delay: 0s;

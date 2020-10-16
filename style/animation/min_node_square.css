@@ -1,4 +1,4 @@
-@keyframes visited_square_animation{
+@keyframes min_node_square_animation{
     0% {
         transform: scale(.3);
         background-color: orange;
