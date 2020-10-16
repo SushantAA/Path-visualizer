@@ -1,17 +1,17 @@
-@keyframes weight_add_animation{
+@keyframes weight_add_animation_visited{
     0% {
         transform: scale(.3);
-        background-color: rebeccapurple;
+        background-color: greenyellow;
       }
     
       50% {
         transform: scale(1.2);
-        background-color: rebeccapurple;
+        background-color: greenyellow;
       }
     
       100% {
         transform: scale(1.0);
-        background-color:rebeccapurple;
+        background-color:greenyellow;
       }
 
 }

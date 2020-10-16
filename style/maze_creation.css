@@ -97,10 +97,10 @@ div div{
     animation-play-state: running;
 }
 .weight_add_square{
-    background-color: purple;
+    background-color:#FFC107;
     width: 1.8rem;
     height: 1.8rem;
-    border: 1px solid blueviolet;
+    border: 5px solid aqua;
     display: inline-block;
 
     animation-name: weight_add_animation;
@@ -112,3 +112,21 @@ div div{
     animation-fill-mode: forwards;
     animation-play-state: running;
 }
+
+.weight_add_square_visited{
+    background-color:  #a7ff83;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 5px solid blueviolet;
+    display: inline-block;
+
+    animation-name: weight_add_animation_visited;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
