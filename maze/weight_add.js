@@ -34,10 +34,11 @@ let weight_add_function = () =>{
             j = parseInt(j);
             console.log(j," -- ",i);
             console.log(typeof(j)," -- ",typeof(i));
-            if( maze_array[j][i][4] != 2 &&  maze_array[j][i][4] != 3)
+            if( maze_array[j][i][4] != 2 &&  maze_array[j][i][4] != 3){
             maze_array[j][i][5] = 5;
+            maze_array[j][i][4] = 4;
             this.classList.remove("normal_square");
-            this.classList.add("weight_add_square");
+            this.classList.add("weight_add_square");}
         }
     }).mouseup(function() {
         let id = this.id;

@@ -18,7 +18,7 @@ for(let j=0;j<vertical_height;j++){
         // 1 ->right
         // 2 ->down
         // 3 ->left
-        // 4 -> 1 -> special wall , 2->end , 3->start
+        // 4 -> 1 -> special wall , 2->end , 3->start , 4 -> weighted
         // 5 -> distance , initial =0
     }
 }
