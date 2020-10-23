@@ -5,8 +5,10 @@ let  horizontal_width = screen.width;
 let  vertical_height = screen.height;
 let  horizontal_devide = 38;
 let  vetrical_devide = 45;
-horizontal_width = Math.floor(horizontal_width/horizontal_devide); 
-vertical_height = Math.floor(vertical_height/vetrical_devide);
+// horizontal_width = Math.floor(horizontal_width/horizontal_devide); 
+horizontal_width = 40; 
+// vertical_height = Math.floor(vertical_height/vetrical_devide);
+vertical_height = 19;
 console.log('width = ',horizontal_width);
 console.log('height = ',vertical_height);
 let maze_creation = () =>{
