@@ -48,6 +48,30 @@ div div{
     border: 1px solid blueviolet;
     display: inline-block;
 }
+
+#endsquare{
+    background-color: #ff304f;
+    /* width: 1.8rem; */
+    /* height: 1.8rem; */
+    color: white;
+    border: 1px solid blueviolet;
+    display: inline-block;
+}
+
+#startsquare{
+    background-color: #9c1de7;
+    color: white;
+    border: 1px solid blueviolet;
+    display: inline-block;
+}
+
+#weight_add{
+    background-color: goldenrod;
+    border: 5px solid aqua;
+    color: white;
+    display: inline-block;
+}
+
 .move_square{
     background-color: yellow;
     width: 1.8rem;

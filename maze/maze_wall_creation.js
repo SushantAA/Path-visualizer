@@ -4,6 +4,7 @@ let wall_creation_button_click = false;
 wall_creation_button.addEventListener('click',function(){
     console.log(wall_creation_button_click);
     wall_creation_button_click = !wall_creation_button_click;
+    weight_add_button_click = false;
     wall_creation_function();
 });
 // wall marking
