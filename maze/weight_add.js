@@ -6,6 +6,7 @@ weight_add_button.addEventListener('click',function(){
     console.log(weight_add_button_click);
     weight_add_button_click = !weight_add_button_click;
     wall_creation_button_click = false;
+    weight_add_button_t_click = false;
     weight_add_function();
 });
 // weight add marking

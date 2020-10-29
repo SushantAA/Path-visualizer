@@ -10,6 +10,7 @@ let css_class_reset = () =>{
                 document.getElementById(id).classList.remove('min_node_square');
                 document.getElementById(id).classList.remove('weight_add_square');
                 document.getElementById(id).classList.remove('weight_add_square_visited');
+                document.getElementById(id).classList.remove('weight_add_square_t');
                 document.getElementById(id).classList.add('normal_square');  
         }
     }
