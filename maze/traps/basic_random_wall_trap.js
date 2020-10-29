@@ -9,8 +9,8 @@ let create_random_wall_trap = () => {
         let x = Math.floor((Math.random())*(horizontal_width)); 
 
         if((y == start_square_vertical && x==start_square_horizonatal) || (y==end_square_vertical  && x== end_square_horizonatal)){}
-        else
-        {if(maze_array[y][x][4]!=1 && maze_array[y][x][4]!=4){
+        else{
+            if(maze_array[y][x][4]!=1 && maze_array[y][x][4]!=4){
             maze_array[y][x][4]=1;
             let tid = make_id(y,x);
             console.log(tid , count_idx_wall);

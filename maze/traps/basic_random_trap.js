@@ -7,7 +7,8 @@ let create_random_trap = () => {
     while(count_idx_wall<50){
         let y = Math.floor((Math.random())*(vertical_height)); 
         let x = Math.floor((Math.random())*(horizontal_width)); 
-
+        if((y == start_square_vertical && x==start_square_horizonatal) || (y==end_square_vertical  && x== end_square_horizonatal)){}
+        else{
         if(maze_array[y][x][4]!=1 && maze_array[y][x][4]!=4){
             maze_array[y][x][4]=1;
             let tid = make_id(y,x);
@@ -18,13 +19,14 @@ let create_random_trap = () => {
             // tid.classList.remove('normal_square');
             // tid.classList.add('wall_square');
             count_idx_wall = count_idx_wall +1;
-        }
+        }}
     }
 
     while(count_idx_weight<50){
         let y = Math.floor((Math.random())*(vertical_height)); 
         let x = Math.floor((Math.random())*(horizontal_width)); 
-
+        if((y == start_square_vertical && x==start_square_horizonatal) || (y==end_square_vertical  && x== end_square_horizonatal)){}
+        else{
         if(maze_array[y][x][4]!=1 && maze_array[y][x][4]!=4){
             maze_array[y][x][5] = 5;
             maze_array[y][x][4] = 4;
@@ -36,7 +38,7 @@ let create_random_trap = () => {
             // tid.classList.remove('normal_square');
             // tid.classList.add('wall_square');
             count_idx_weight = count_idx_weight +1;
-        }
+        }}
     }
 
 }
