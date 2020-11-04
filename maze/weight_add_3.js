@@ -1,19 +1,18 @@
-alert('wall');
-let wall_creation_button = document.querySelector('#wall_creation');
-let wall_creation_button_click = false;
-wall_creation_button.addEventListener('click',function(){
-    console.log(wall_creation_button_click);
-    wall_creation_button_click = !wall_creation_button_click;
+let weight_add_button_t = document.querySelector('#weight_add_3');
+let weight_add_button_t_click = false;
+weight_add_button_t.addEventListener('click',function(){
+    console.log(weight_add_button_t_click);
+    weight_add_button_t_click = !weight_add_button_t_click;
+    wall_creation_button_click = false;
     weight_add_button_click = false;
-    weight_add_button_t_click = false;
-    wall_creation_function();
+    weight_add_function_t();
 });
-// wall marking
-let wall_creation_function = () =>{
+// weight add marking
+let weight_add_function_t = () =>{
     let mouse = false;
     $(".normal_square").mousedown(function() {
         // console.log('thsi is = ',this);
-        if(wall_creation_button_click===true){
+        if(weight_add_button_t_click===true){
         console.log("mouse down   --->  "+ this.id);
         mouse= true;}
     }).mouseover(function(){
@@ -35,14 +34,16 @@ let wall_creation_function = () =>{
             j = parseInt(j);
             console.log(j," -- ",i);
             console.log(typeof(j)," -- ",typeof(i));
-            if( maze_array[j][i][4] != 2 &&  maze_array[j][i][4] != 3)
-            maze_array[j][i][4] = 1;
+            if( maze_array[j][i][4] != 2 &&  maze_array[j][i][4] != 3){
+            // maze_array[j][i][5] = 5;
+            maze_array[j][i][5] = 3;
+            maze_array[j][i][4] = 4;
             this.classList.remove("normal_square");
-            this.classList.add("wall_square");
+            this.classList.add("weight_add_square_t");}
         }
     }).mouseup(function() {
         let id = this.id;
-        if(wall_creation_button_click==true){
+        if(weight_add_button_t_click==true){
         console.log("mouse up   --->    "+ this.id);
         mouse = false;}
     });

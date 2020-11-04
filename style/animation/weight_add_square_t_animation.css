@@ -1,0 +1,17 @@
+@keyframes weight_add_animation_visited_t{
+    0% {
+        transform: scale(.3);
+        background-color: green;
+      }
+    
+      50% {
+        transform: scale(1.2);
+        background-color: green;
+      }
+    
+      100% {
+        transform: scale(1.0);
+        background-color:green;
+      }
+
+}

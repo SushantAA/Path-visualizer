@@ -27,52 +27,85 @@ maze_array[10][20][4]=3;
 
 // });
 
+let start_change_click = false;
 
-// let start_creation_button_click = true;
-// // start_square_element.addEventListener('click',function(){
-// //     console.log(start_creation_button_click);
-// //     // wall_creation_button_click = !wall_creation_button_click;
-// //     start_creation_function();
-// // });
-// // start marking
-// let start_creation_function = () =>{
-//     console.log('start function call');
-//     let mouse = false;
-//     $(".start_square").mousedown(function() {
-//         // console.log('thsi is = ',this);
-//         console.log('mouse down click');
-//         if(start_creation_button_click===true){
-//         console.log("mouse down   --->  "+ this.id);
-//         mouse= true;}
-//     }).mouseover(function(){
-//         if(mouse===true ){
-//             console.log("mouseover   " , this);
-//             let id = this.id;
-//             console.log('move id ======== ',id);
-//             let k=0;
-//             let j = "";
-//             for(;k<id.length && id[k]!=',';k++){
-//                 j =j + id[k];
-//             }
-//             let i="";
-//             k++;
-//             for(;k<id.length ;k++){
-//                 i =i + id[k];
-//             }
-//             i = parseInt(i);
-//             j = parseInt(j);
-//             console.log(j," -- ",i);
-//             console.log(typeof(j)," -- ",typeof(i));
-//             // maze_array[j][i][4] = 1;
-//             this.classList.remove("normal_square");
-//             this.classList.add("move_square");
-//         }
-//     }).mouseup(function() {
-//         let id = this.id;
-//         if(wall_creation_button_click==true){
-//         console.log("mouse up   --->    "+ this.id);
-//         mouse = false;}
-//     });
-// }
+$('#startsquare').click(function(){
+    console.log('start square click');
+    start_change_click = !start_change_click;
+    change_start();
+    console.log('start square click end');
 
-// start_creation_function();
+});
+
+let change_start = () =>{
+    let mouse = false;
+    $(".normal_square").mousedown(function() {
+        // console.log('thsi is = ',this);
+        if(start_change_click===true){
+        console.log("mouse down   --->  "+ this.id);
+        start_square_element.classList.remove('start_square');
+        start_square_element.classList.add('normal_square');
+        // this.classList.add('start_square');
+        // this.classList.remove('normal_square');
+        mouse= true;}
+    }).mouseup(function() {
+        let id = this.id;
+        if(start_change_click==true){
+            this.classList.add('start_square');
+            this.classList.remove('normal_square');
+            start_square_id = this.id;
+            start_square_element = document.getElementById(start_square_id);
+            let x = coordinate_from_id(start_square_id);
+            let  j = x[0] ,i = x[1] ;
+            // j ->vertical , i->horizontal
+            start_square_vertical = j;
+            start_square_horizonatal = i;
+            console.log('start_square_vertical = '+start_square_vertical +" , "+ 'start_square_horizonatal = '+ start_square_horizonatal)
+        console.log("mouse up   --->    "+ this.id);
+        start_change_click=false;
+        mouse = false;}
+    });
+
+}
+
+
+let end_change_click = false;
+
+$('#endsquare').click(function(){
+    console.log('end square click');
+    end_change_click = !end_change_click;
+    change_end();
+    console.log('end square click end');
+
+});
+
+let change_end = () =>{
+    let mouse = false;
+    $(".normal_square").mousedown(function() {
+        // console.log('thsi is = ',this);
+        if(end_change_click===true){
+        console.log("mouse down   --->  "+ this.id);
+        end_square_element.classList.remove('end_square');
+        end_square_element.classList.add('normal_square');
+        // this.classList.add('start_square');
+        // this.classList.remove('normal_square');
+        mouse= true;}
+    }).mouseup(function() {
+        let id = this.id;
+        if(end_change_click==true){
+            this.classList.add('end_square');
+            this.classList.remove('normal_square');
+            end_square_id = this.id;
+            end_square_element = document.getElementById(end_square_id);
+            let x = coordinate_from_id(end_square_id);
+            let  j = x[0] ,i = x[1] ;
+            // j ->vertical , i->horizontal
+            end_square_vertical = j;
+            end_square_horizonatal = i;
+            console.log('end_square_vertical = '+end_square_vertical +" , "+ 'end_square_horizonatal = '+ end_square_horizonatal)
+        console.log("mouse up   --->    "+ this.id);
+        end_change_click=false;
+        mouse = false;}
+    });
+
+}
