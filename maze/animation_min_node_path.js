@@ -22,7 +22,8 @@ let display_min_distance_node_animation = () =>{
     }
         
         document.getElementById(id).classList.remove('weight_add_square_visited');
-        document.getElementById(id).classList.remove('weight_add_square');
+        document.getElementById(id).classList.remove('weight_add_square_t');
+        // document.getElementById(id).classList.remove('weight_add_square');
         document.getElementById(id).classList.remove('visited_square');
         document.getElementById(id).classList.add('min_node_square');
         if(id == start_square_id){

@@ -131,11 +131,21 @@ let dijkstra = () =>{
 }
 
 document.querySelector('#dijkstra').addEventListener('click',function(){
+    if(lock_present){
     console.log('dijkstra start');
     dijkstra();
     console.log('dijkstra end');
     console.log("min node animation start");
     // visited_node_animation_function();
     // display_min_distance_node_animation();
-    console.log("min node animation end");
+    console.log("min node animation end");}
+    else{
+        dijkstra();
+        animation_function();
+        // swap_lock(end_square_id,end_square_vertical,end_square_horizonatal);
+        // swap_lock(start_square_id,start_square_vertical,start_square_horizonatal);
+        // dijkstra();
+        // animation_function();
+        // swap_lock(start_square_id,start_square_vertical,start_square_horizonatal);
+    }
 });
