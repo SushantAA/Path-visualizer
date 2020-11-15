@@ -4,7 +4,24 @@
 h1{
     /* font-family: 'Sansita Swashed', cursive; */
     font-family: 'Teko', sans-serif;
+    
     color: whitesmoke;
+}
+.button_img{
+    width: 30px;
+    /* size: 20px; */
+    /* background-color: white; */
 }
 
 
+#startsquare{
+    /* background-image: url(animation/image/blur_circular-24px.svg); */
+    /* background-color: wheat;
+    color: white;
+    border: 1px solid blueviolet;
+    display: inline-block; */
+    /* padding: 0px; */
+    
+    font-size: 30px;
+
+}

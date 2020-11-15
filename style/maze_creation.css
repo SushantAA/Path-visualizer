@@ -9,13 +9,11 @@ body{
 }
 .btn{
     font-family: 'Ubuntu', sans-serif;
+    font-size: 100px;
 }
 #maze{
     margin-top: 1rem;
     text-align: center;
-}
-#id{
-    /* justify-content: center; */
 }
 div div{
     line-height: 0;
@@ -74,14 +72,6 @@ div div{
     background-color: #ff304f;
     /* width: 1.8rem; */
     /* height: 1.8rem; */
-    color: white;
-    border: 1px solid blueviolet;
-    display: inline-block;
-}
-
-#startsquare{
-    /* background-image: url(animation/image/blur_circular-24px.svg); */
-    background-color: #9c1de7;
     color: white;
     border: 1px solid blueviolet;
     display: inline-block;

@@ -22,6 +22,22 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 
+	<!-- fomantic ui -->
+	<!-- You MUST include jQuery before Fomantic -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+
+	<!-- You MUST include jQuery before Fomantic -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.7/semantic.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.7/semantic.min.js"></script>
+
+	<!-- You MUST include jQuery before Fomantic -->
+	<script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/fomantic-ui@2.8.7/dist/semantic.min.css">
+	<script src="https://unpkg.com/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+
 </head>
 <body id="body_bg">
 
@@ -36,11 +52,18 @@
 		  <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
 		</svg>	
 	Again</button>
+
+	<div class="ui animated button" tabindex="0">
+		<div class="visible content">Next</div>
+		<div class="hidden content">
+		  <i class="right arrow icon"></i>
+		</div>
+	</div>
 	
 	<button id="wall_creation" class="btn btn-dark  ">Wall Creation</button>
-	<button id="startsquare" class="btn ">start_square</button>
+	<button id="startsquare" class="btn btn-outline-primary "> <img src="style/animation/image/blur_circular-24px.svg" alt="" class="button_img">  Start</button>
 	<button id="lock" class="btn btn-danger">lock</button>
-	<button id="endsquare" class="btn  ">end_square</button>
+	<button id="endsquare" class="btn  "> <img src="style/animation/image/filter_tilt_shift-24px.svg" alt="" class="button_img" > End</button>
 	<button id="weight_add" class="btn  ">+5</button>
 	<button id="weight_add_3" class="btn btn-danger ">+3</button>
 <!-- 	<button id="trap" class="btn btn-dark  ">trap</button>
