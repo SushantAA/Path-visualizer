@@ -6,18 +6,18 @@
     
       25% {
         transform: scale(1.2);
-        background-color: #a7ff83;
+        background-color: yellow;
       }
     
       50% {
         transform: scale(1.5);
-        background-color: #a7ff83;
+        background-color: yellow;
       }
 
       
       75% {
         transform: scale(1.2);
-        background-color: #a7ff83;
+        background-color: yellow;
       }
 
       100% {
