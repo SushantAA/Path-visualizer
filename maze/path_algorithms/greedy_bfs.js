@@ -1,4 +1,4 @@
-alert('greedy_bfs');
+// alert('greedy_bfs');
 
 // let find_min_distance = (arr,distance) =>{
 //     let n = arr.length;

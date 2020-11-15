@@ -1,4 +1,4 @@
-alert('again');
+// alert('again');
 
 let css_class_reset = () =>{
     for(let j=0;j<vertical_height;j++){

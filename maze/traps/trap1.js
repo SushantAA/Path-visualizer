@@ -1,4 +1,4 @@
-alert('trap1');
+// alert('trap1');
 
 let create_trap1 = () => {
     let trap1_arr = 

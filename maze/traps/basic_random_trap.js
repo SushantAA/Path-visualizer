@@ -1,4 +1,4 @@
-alert('basic random trap');
+// alert('basic random trap');
 
 let create_random_trap = () => {
     let count_idx_wall =0;

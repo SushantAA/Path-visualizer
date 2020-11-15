@@ -1,1 +1,1 @@
-alert(x);
+// alert(x);

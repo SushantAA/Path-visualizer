@@ -1,4 +1,4 @@
-alert('-------------------------basic random weight trap');
+// alert('-------------------------basic random weight trap');
 
 let create_random_weight_trap = () => {
     let count_idx_wall =0;

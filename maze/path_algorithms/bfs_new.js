@@ -1,4 +1,4 @@
-alert('bfs new');
+// alert('bfs new');
 
 let make_id = (j,i) =>{
     let id = j.toString() + ',' + i.toString();

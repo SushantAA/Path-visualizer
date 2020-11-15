@@ -2,7 +2,7 @@
 
 
 
-alert('start end point');
+// alert('start end point');
 let start_square_vertical = 7;
 let start_square_horizonatal = 7;
 let end_square_vertical = 9;

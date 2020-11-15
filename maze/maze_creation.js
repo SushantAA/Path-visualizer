@@ -1,4 +1,4 @@
-alert("lskdjf");
+// alert("lskdjf");
 // id of squares is (1,2) like 1-> vetrical , 2->horizontal 
 let  maze_all_squates = document.querySelector('#maze');
 let  horizontal_width = screen.width;
