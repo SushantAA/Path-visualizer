@@ -1,17 +1,27 @@
 @keyframes weight_add_animation{
     0% {
         transform: scale(.3);
-        background-color: rebeccapurple;
+        /* background-color: rebeccapurple; */
+    /* background-image: url(anim); */
+    background-image: url(image/filter_5-24px.svg);
+    /* color: black; */
       }
     
       50% {
         transform: scale(1.2);
-        background-color: rebeccapurple;
-      }
+        /* background-color: rebeccapurple; */
+        
+    background-image: url(image/filter_5-24px.svg);
+    /* background-image: url(animation/image/number-5.svg); */
+    /* color: black;     */
+  }
     
       100% {
         transform: scale(1.0);
-        background-color:rebeccapurple;
+        background-image: url(image/filter_5-24px.svg);
+        /* background-color:rebeccapurple; */
+    /* background-image: url(animation/image/number-5.svg); */
+        /* color: black; */
       }
 
 }

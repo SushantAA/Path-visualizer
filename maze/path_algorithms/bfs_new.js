@@ -39,13 +39,13 @@ let bfs_new = () =>{
         let  j = x[0] ,i = x[1] ;
 
         console.log('j = ',j ,' , i = ',i)
+        visited_animate.push(f);
 
         if(j==end_square_vertical && i==end_square_horizonatal){
             console.log('bfs finished');
             return;
         }
 
-        visited_animate.push(f);
 
         console.log('h.has = ' ,h.has(f));
         console.log('vertical_height   = ',vertical_height);

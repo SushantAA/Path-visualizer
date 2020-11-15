@@ -1,12 +1,19 @@
 body{
     background-color: white;
+    /* background-image: url(hamed-daram.jpg); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* opacity: 0.5; */
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+}
+.btn{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100px;
 }
 #maze{
     margin-top: 1rem;
     text-align: center;
-}
-#id{
-    /* justify-content: center; */
 }
 div div{
     line-height: 0;
@@ -35,14 +42,26 @@ div div{
     animation-play-state: running;
 }
 .start_square{
-    background-color: #9c1de7;
+    background-image: url(animation/image/blur_circular-24px.svg);
+    /* background-color: #9c1de7; */
+
+    background-color: azure;
+
+    background-size: cover;
+
     width: 1.8rem;
     height: 1.8rem;
     border: 1px solid blueviolet;
     display: inline-block;
 }
 .end_square{
-    background-color: #ff304f;
+    /* background-color: #ff304f; */
+
+    background-image: url(animation/image/filter_tilt_shift-24px.svg);
+    background-color: azure;
+    background-size: cover;
+
+
     width: 1.8rem;
     height: 1.8rem;
     border: 1px solid blueviolet;
@@ -53,13 +72,6 @@ div div{
     background-color: #ff304f;
     /* width: 1.8rem; */
     /* height: 1.8rem; */
-    color: white;
-    border: 1px solid blueviolet;
-    display: inline-block;
-}
-
-#startsquare{
-    background-color: #9c1de7;
     color: white;
     border: 1px solid blueviolet;
     display: inline-block;
@@ -121,10 +133,21 @@ div div{
     animation-play-state: running;
 }
 .weight_add_square{
-    background-color:#FFC107;
+    /* background-color:#FFC107; */
+    /* background-image: url(image-source/5.svg); */
+    background-image: url(animation/image/filter_5-24px.svg);
+    /* background-repeat: no-repeat;
+  background-attachment: fixed; */
+ 
+    /* background-color: azure; */
+    border: 1px solid blueviolet;
+
+    /* color: white; */
+    background-size: cover;
+    /* color: black; */
     width: 1.8rem;
     height: 1.8rem;
-    border: 5px solid aqua;
+    /* border: 5px solid aqua; */
     display: inline-block;
 
     animation-name: weight_add_animation;
@@ -138,10 +161,18 @@ div div{
 }
 
 .weight_add_square_visited{
-    background-color:  #a7ff83;
+    /* background-color:  #a7ff83; */
+    
+    
+    /* background-image: url(animation/image/filter_5-24px.svg); */
+    background-color: #43dde6;
+    border: 1px solid blueviolet;
+    background-size: cover;
+
+    /* background-image: url(animation/image/number-5.svg); */
     width: 1.8rem;
     height: 1.8rem;
-    border: 5px solid blueviolet;
+    /* border: 5px solid blueviolet; */
     display: inline-block;
 
     animation-name: weight_add_animation_visited;
@@ -154,10 +185,16 @@ div div{
     animation-play-state: running;
 }
 .weight_add_square_t{
-    background-color: green;
+    background-image: url(animation/image/filter_3-24px.svg);
+    background-size: cover;
+
+    /* background-color: azure; */
+    border: 1px solid blueviolet; 
+
+    /* background-color: green; */
     width: 1.8rem;
     height: 1.8rem;
-    border: 5px solid aqua;
+    /* border: 5px solid aqua; */
     display: inline-block;
 
     animation-name: weight_add_animation_visited_t;
@@ -168,5 +205,12 @@ div div{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-play-state: running;
+}
+.lock_square{
+    background-color: pink;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 1px solid blueviolet;
+    display: inline-block;
 }
 

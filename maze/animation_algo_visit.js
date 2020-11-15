@@ -25,17 +25,18 @@ let visited_node_animation_function =()=>{
           start_square_element.classList.add('start_square');
        }
         
-        document.getElementById(id).classList.remove('normal_square');
+        // document.getElementById(id).classList.remove('normal_square');
         // document.getElementById(id).classList.remove('weight_add_square');==
-        if(document.getElementById(id).classList.contains('weight_add_square')){
-          document.getElementById(id).classList.remove('weight_add_square');
+        if(document.getElementById(id).classList.contains('weight_add_square') || document.getElementById(id).classList.contains('weight_add_square_t')){
+        //   document.getElementById(id).classList.remove('weight_add_square');
           document.getElementById(id).classList.add('weight_add_square_visited');
         }else{
-        document.getElementById(id).classList.add('visited_square');}
-        if(id == start_square_id){
-            start_square_element.classList.remove('visited_square');
-            start_square_element.classList.add('start_square');
+        document.getElementById(id).classList.add('visited_square');
         }
+        // if(id == start_square_id){
+        //     start_square_element.classList.remove('visited_square');
+        //     start_square_element.classList.add('start_square');
+        // }
         i = i+1;
         
     },50);

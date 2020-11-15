@@ -38,12 +38,13 @@ let dijkstra = () =>{
         let d = distance.get(id);
         console.log('j = ',j ,' , i = ',i);
 
+        visited_animate.push(f);
+
         if(j==end_square_vertical && i==end_square_horizonatal){
             console.log('dijkstra finished');
             break;
         }
     
-        visited_animate.push(f);
         
 
         if(j>0){
@@ -120,6 +121,7 @@ let dijkstra = () =>{
 
     let tid = make_id(end_square_vertical,end_square_horizonatal);
     console.log('final  tid = ',tid);
+    min_distance_node_array.push(end_square_id)
     while(parent.get(tid)!='e'){
         let f = parent.get(tid);
        console.log("node id = ",f);
@@ -131,11 +133,21 @@ let dijkstra = () =>{
 }
 
 document.querySelector('#dijkstra').addEventListener('click',function(){
+    if(lock_present){
     console.log('dijkstra start');
     dijkstra();
     console.log('dijkstra end');
     console.log("min node animation start");
     // visited_node_animation_function();
     // display_min_distance_node_animation();
-    console.log("min node animation end");
+    console.log("min node animation end");}
+    else{
+        dijkstra();
+        animation_function();
+        // swap_lock(end_square_id,end_square_vertical,end_square_horizonatal);
+        // swap_lock(start_square_id,start_square_vertical,start_square_horizonatal);
+        // dijkstra();
+        // animation_function();
+        // swap_lock(start_square_id,start_square_vertical,start_square_horizonatal);
+    }
 });

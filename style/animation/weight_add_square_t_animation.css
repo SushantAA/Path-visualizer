@@ -1,17 +1,20 @@
 @keyframes weight_add_animation_visited_t{
     0% {
         transform: scale(.3);
-        background-color: green;
+        /* background-color: green; */
+        background-image: url(image/filter_3-24px.svg);
       }
     
       50% {
         transform: scale(1.2);
-        background-color: green;
+        /* background-color: green; */
+        background-image: url(image/filter_3-24px.svg);
       }
     
       100% {
         transform: scale(1.0);
-        background-color:green;
+        /* background-color:green; */
+        background-image: url(image/filter_3-24px.svg);
       }
 
 }
