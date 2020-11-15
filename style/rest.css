@@ -1,5 +1,10 @@
 #body_bg{
-    background-color: white;
+    /* background-color: red; */
+    /* background-image: linear-gradient(rgb(53, 50, 50), white); */
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 h1{
     /* font-family: 'Sansita Swashed', cursive; */
@@ -8,20 +13,37 @@ h1{
     color: whitesmoke;
 }
 .button_img{
-    width: 30px;
+    fill: white;
+    /* color: white; */
+    /* width: 30px; */
     /* size: 20px; */
     /* background-color: white; */
 }
 
-
-#startsquare{
+/* 
+ #startsquare{
     /* background-image: url(animation/image/blur_circular-24px.svg); */
     /* background-color: wheat;
     color: white;
     border: 1px solid blueviolet;
     display: inline-block; */
-    /* padding: 0px; */
+    /* padding: 0px;  */
     
-    font-size: 30px;
+    /* font-size: 30px; */
+
+/* }  */
+
+/* #endsquare{
+    background-color: #ff304f;
+    /* width: 1.8rem; */
+    /* height: 1.8rem; */
+    /* color: white; */
+    /* border: 1px solid blueviolet; */
+    /* display: inline-block; */
+/* }  */
+
+#heading_h{
+    font-family: 'Teko', sans-serif;
+    font-size: 70px;
 
 }
