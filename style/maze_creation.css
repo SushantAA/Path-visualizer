@@ -198,8 +198,8 @@ div div{
     background-image: url(animation/image/filter_3-24px.svg);
     background-size: cover;
 
-    background-color: azure;
-    border: 1px solid blueviolet;
+    /* background-color: azure; */
+    border: 1px solid blueviolet; 
 
     /* background-color: green; */
     width: 1.8rem;

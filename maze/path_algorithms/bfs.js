@@ -46,6 +46,7 @@ let dfs_complete = false;
 let dfs = (start_vertical,start_horizontal,distance,visited) =>{
     if(dfs_complete)        return ;
     if(start_vertical==end_square_vertical && start_horizontal ==end_square_horizonatal){
+        visited_animate.push(end_square_id);
         console.log('dfs complete'); 
         dfs_complete = true;     
         return;}

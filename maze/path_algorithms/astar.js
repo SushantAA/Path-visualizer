@@ -43,13 +43,14 @@ let astar = () =>{
         // j ->vertical , i->horizontal
         let d = distance.get(id);
         console.log('j = ',j ,' , i = ',i);
+        
+        visited_animate.push(f);
 
         if(j==end_square_vertical && i==end_square_horizonatal){
             console.log('dijkstra finished');
             break;
         }
     
-        visited_animate.push(f);
         
 
         if(j>0){
@@ -149,6 +150,7 @@ let astar = () =>{
 
     let tid = make_id(end_square_vertical,end_square_horizonatal);
     console.log('final  tid = ',tid);
+    min_distance_node_array.push(end_square_id)
     while(parent.get(tid)!='e'){
         let f = parent.get(tid);
        console.log("node id = ",f);
