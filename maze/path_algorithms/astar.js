@@ -1,4 +1,4 @@
-alert('astar connected');
+// alert('astar connected');
 //  weights are not effective in astar
 let find_min_distance_astar = (arr,distance,hvalue) =>{
     let n = arr.length;

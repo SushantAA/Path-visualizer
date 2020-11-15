@@ -1,4 +1,4 @@
-alert('============================= weight add');
+// alert('============================= weight add');
 
 let weight_add_button = document.querySelector('#weight_add');
 let weight_add_button_click = false;

@@ -1,4 +1,4 @@
-alert("lock js");
+// alert("lock js");
 
 let lock_present = false;
 

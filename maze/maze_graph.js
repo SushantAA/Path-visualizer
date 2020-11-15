@@ -1,4 +1,4 @@
-alert('2345345');
+// alert('2345345');
 let hash_map = new Map();
 class coodinate_point {
     constructor(vertical,horizontal){

@@ -1,4 +1,4 @@
-alert('animation button');
+// alert('animation button');
 
 
 document.querySelector('#animate').addEventListener('click',function(){

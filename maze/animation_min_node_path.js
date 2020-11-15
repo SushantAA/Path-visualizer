@@ -1,4 +1,4 @@
-alert('min node animation');
+// alert('min node animation');
 let min_distance_node_array = [];
 
 let min_animatin_complete = false;

@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: red;
     /* background-image: url(hamed-daram.jpg); */
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -20,15 +20,15 @@ div div{
 }
 .normal_square{
     background-color: azure;
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 2.2rem;
+    height: 2.2rem;
     border: 1px solid blueviolet;
     display: inline-block;
 }
 .wall_square{
     background-color: black;
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 2.2rem;
+    height: 2.2rem;
     border: 1px solid blueviolet;
     display: inline-block;
 
@@ -49,8 +49,8 @@ div div{
 
     background-size: cover;
 
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 2.2rem;
+    height: 2.2rem;
     border: 1px solid blueviolet;
     display: inline-block;
 }
@@ -62,32 +62,25 @@ div div{
     background-size: cover;
 
 
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 2.2rem;
+    height: 2.2rem;
     border: 1px solid blueviolet;
     display: inline-block;
 }
 
-#endsquare{
-    background-color: #ff304f;
-    /* width: 1.8rem; */
-    /* height: 1.8rem; */
-    color: white;
-    border: 1px solid blueviolet;
-    display: inline-block;
-}
 
-#weight_add{
+
+/* #weight_add{
     background-color: goldenrod;
     border: 5px solid aqua;
     color: white;
     display: inline-block;
-}
+} */
 
 .move_square{
     background-color: yellow;
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 2.2rem;
+    height: 2.2rem;
     border: 1px solid blueviolet;
     display: inline-block;
 
@@ -102,8 +95,8 @@ div div{
 }
 .visited_square{
     background-color: yellow;
-    width: 1.8rem;
-    height: 1.8rem;
+    width:2.2rem;
+    height: 2.2rem;
     border: 1px solid blueviolet;
     display: inline-block;
 
@@ -118,8 +111,8 @@ div div{
 }
 .min_node_square{
     background-color: orange;
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 2.2rem;
+    height: 2.2rem;
     border: 1px solid blueviolet;
     display: inline-block;
 
@@ -145,8 +138,8 @@ div div{
     /* color: white; */
     background-size: cover;
     /* color: black; */
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 2.2rem;
+    height: 2.2rem;
     /* border: 5px solid aqua; */
     display: inline-block;
 
@@ -170,8 +163,8 @@ div div{
     background-size: cover;
 
     /* background-image: url(animation/image/number-5.svg); */
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 2.2rem;
+    height: 2.2rem;
     /* border: 5px solid blueviolet; */
     display: inline-block;
 
@@ -186,14 +179,14 @@ div div{
 }
 .weight_add_square_t{
     background-image: url(animation/image/filter_3-24px.svg);
-    background-size: cover;
 
     /* background-color: azure; */
     border: 1px solid blueviolet; 
+    background-size: cover;
 
     /* background-color: green; */
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 2.2rem;
+    height: 2.2rem;
     /* border: 5px solid aqua; */
     display: inline-block;
 
@@ -208,8 +201,8 @@ div div{
 }
 .lock_square{
     background-color: pink;
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 2.2rem;
+    height: 2.2rem;
     border: 1px solid blueviolet;
     display: inline-block;
 }

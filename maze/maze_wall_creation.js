@@ -1,4 +1,4 @@
-alert('wall');
+// alert('wall');
 let wall_creation_button = document.querySelector('#wall_creation');
 let wall_creation_button_click = false;
 wall_creation_button.addEventListener('click',function(){

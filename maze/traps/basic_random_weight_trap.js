@@ -1,4 +1,4 @@
-alert('-------------------------basic random weight trap');
+// alert('-------------------------basic random weight trap');
 
 let create_random_weight_trap = () => {
     let count_idx_wall =0;
@@ -22,7 +22,7 @@ let create_random_weight_trap = () => {
     //     }}
     // }
 
-    while(count_idx_weight<150){
+    while(count_idx_weight<75){
         let y = Math.floor((Math.random())*(vertical_height)); 
         let x = Math.floor((Math.random())*(horizontal_width)); 
         if((y == start_square_vertical && x==start_square_horizonatal) || (y==end_square_vertical  && x== end_square_horizonatal)){}
@@ -35,6 +35,27 @@ let create_random_weight_trap = () => {
             
             document.getElementById(tid).classList.remove('normal_square');
             document.getElementById(tid).classList.add('weight_add_square');
+            // tid.classList.remove('normal_square');
+            // tid.classList.add('wall_square');
+            count_idx_weight = count_idx_weight +1;
+        }}
+    }
+
+    count_idx_weight =0;
+
+    while(count_idx_weight<75){
+        let y = Math.floor((Math.random())*(vertical_height)); 
+        let x = Math.floor((Math.random())*(horizontal_width)); 
+        if((y == start_square_vertical && x==start_square_horizonatal) || (y==end_square_vertical  && x== end_square_horizonatal)){}
+        else{
+        if(maze_array[y][x][4]!=1 && maze_array[y][x][4]!=4){
+            maze_array[y][x][5] = 3;
+            maze_array[y][x][4] = 4;
+            let tid = make_id(y,x);
+            console.log(tid , count_idx_wall);
+            
+            document.getElementById(tid).classList.remove('normal_square');
+            document.getElementById(tid).classList.add('weight_add_square_t');
             // tid.classList.remove('normal_square');
             // tid.classList.add('wall_square');
             count_idx_weight = count_idx_weight +1;

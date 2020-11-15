@@ -1,4 +1,4 @@
-alert('again');
+// alert('again');
 
 let css_class_reset = () =>{
     for(let j=0;j<vertical_height;j++){
@@ -14,6 +14,10 @@ let css_class_reset = () =>{
                 document.getElementById(id).classList.add('normal_square');  
         }
     }
+
+    weight_add_button_t_click = false;
+    weight_add_button_click = false
+    wall_creation_button_click = false
 }
 
 document.querySelector('#again').addEventListener('click',function(){

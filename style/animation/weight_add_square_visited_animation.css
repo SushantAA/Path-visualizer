@@ -3,21 +3,21 @@
         transform: scale(.3);
         /* background-color: greenyellow; */
         /* background-image: url(animation/image/filter_5-24px.svg); */
-    background-color: #43dde6;
+        background-color: #43dde6;
       }
     
       50% {
         transform: scale(1.2);
         /* background-color: greenyellow; */
         /* background-image: url(animation/image/filter_5-24px.svg); */
-    background-color: #43dde6;
+        background-color: #43dde6;
       }
     
       100% {
         transform: scale(1.0);
         /* background-color:greenyellow; */
         /* background-image: url(animation/image/filter_5-24px.svg); */
-    background-color: #43dde6;
+        background-color: #43dde6;
       }
 
 }

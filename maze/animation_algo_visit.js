@@ -1,4 +1,4 @@
-alert('algo visit animation');
+// alert('algo visit animation');
 
 let visited_animate = [];
 
