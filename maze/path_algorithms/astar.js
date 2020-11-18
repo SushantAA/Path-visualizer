@@ -1,5 +1,4 @@
 // alert('astar connected');
-//  weights are not effective in astar
 let find_min_distance_astar = (arr,distance,hvalue) =>{
     let n = arr.length;
     let d =100000;
@@ -25,10 +24,8 @@ let astar = () =>{
     let distance = new Map();
     let hvalue = new Map();
     let parent = new Map();
-    // let arr = [];
 
     let id = make_id(start_square_vertical,start_square_horizonatal);
-    // h.set(id,true);
     console.log('start id = ',id);
     let arr = [id];
     hvalue.set(id,h_value_function(start_square_vertical,start_square_horizonatal));
@@ -166,7 +163,5 @@ document.querySelector('#astar').addEventListener('click',function(){
     astar();
     console.log('astar end');
     console.log("min node animation start");
-    // visited_node_animation_function();
-    // display_min_distance_node_animation();
     console.log("min node animation end");
 });

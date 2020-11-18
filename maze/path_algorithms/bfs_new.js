@@ -30,10 +30,6 @@ let bfs_new = () =>{
         let f = q[0];
         console.log(f);
         q.shift();
-        // h.delete(q);
-
-        // horizontal_width = Math.floor(horizontal_width/horizontal_devide); 
-        // vertical_height
 
         let x = coordinate_from_id(f);
         let  j = x[0] ,i = x[1] ;
