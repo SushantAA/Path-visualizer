@@ -1,7 +1,7 @@
-// alert('greedy_bfs');
+// alert('bfs_path');
 
 
-let greedy_bfs = () =>{
+let bfs_path = () =>{
     let distance = new Map();
     let parent = new Map();
     // let arr = [];
@@ -94,7 +94,7 @@ let greedy_bfs = () =>{
         }
 
         if(j==end_square_vertical && i==end_square_horizonatal){
-            console.log('greedy_bfs finished');
+            console.log('bfs_path finished');
             break;
         }
 
@@ -116,9 +116,9 @@ let greedy_bfs = () =>{
 
 }
 
-document.querySelector('#greedy_bfs').addEventListener('click',function(){
-    console.log('greedy_bfs start');
-    greedy_bfs();
-    console.log('greedy_bfs end');
+document.querySelector('#bfs_path').addEventListener('click',function(){
+    console.log('bfs_path start');
+    bfs_path();
+    console.log('bfs_path end');
     console.log("min node animation start");
 });

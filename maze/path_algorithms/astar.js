@@ -1,5 +1,5 @@
 // alert('astar connected');
-let find_min_distance_astar = (arr,distance,hvalue) =>{
+let find_min_distance_astar = (arr,hvalue) =>{
     let n = arr.length;
     let d =100000;
     let a ;
@@ -33,7 +33,7 @@ let astar = () =>{
     parent.set(id,"e");
     
     while(arr.length!=0){
-        let f = find_min_distance_astar(arr,distance,hvalue);
+        let f = find_min_distance_astar(arr,hvalue);
         id = f;
         let x = coordinate_from_id(f);
         let  j = x[0] ,i = x[1] ;
