@@ -1,4 +1,4 @@
-alert('speed');
+// alert('speed');
 
 let algo_speed = 50;
 
