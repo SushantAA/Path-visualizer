@@ -18,7 +18,7 @@ let wall_creation_function = () =>{
         mouse= true;}
     }).mouseover(function(){
         if(mouse===true ){
-        console.log("mouseover   " , this);
+            console.log("mouseover   " , this);
             let id = this.id;
             console.log('move id ======== ',id);
             let k=0;
@@ -35,10 +35,10 @@ let wall_creation_function = () =>{
             j = parseInt(j);
             console.log(j," -- ",i);
             console.log(typeof(j)," -- ",typeof(i));
-            if( maze_array[j][i][4] != 2 &&  maze_array[j][i][4] != 3)
+            if( maze_array[j][i][4] != 2 &&  maze_array[j][i][4] != 3){
             maze_array[j][i][4] = 1;
             this.classList.remove("normal_square");
-            this.classList.add("wall_square");
+            this.classList.add("wall_square");}
         }
     }).mouseup(function() {
         let id = this.id;

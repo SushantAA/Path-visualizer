@@ -1,23 +1,7 @@
-// alert('greedy_bfs');
+// alert('bfs_path');
 
-// let find_min_distance = (arr,distance) =>{
-//     let n = arr.length;
-//     let d =100000;
-//     let a ;
-//     for(let i=0;i<n;i++){
-//         console.log('i = ',i,' , arr[i] = ',arr[i],' , distance = ',distance.get(arr[i]));
-//         if(d>distance.get(arr[i])){
-//             d = distance.get(arr[i]);
-//             a = i;
-//         }
-//     }
-//     console.log("a = ",a);
-//     let l = arr[a];
-//     arr.splice(a,1);
-//     return l;
-// }
 
-let greedy_bfs = () =>{
+let bfs_path = () =>{
     let distance = new Map();
     let parent = new Map();
     // let arr = [];
@@ -38,12 +22,6 @@ let greedy_bfs = () =>{
         let d = distance.get(id);
         console.log('j = ',j ,' , i = ',i);
         visited_animate.push(f);
-
-        // if(j==end_square_vertical && i==end_square_horizonatal){
-        //     console.log('greedy_bfs finished');
-        //     break;
-        // }
-    
         
 
         if(j>0){
@@ -116,7 +94,7 @@ let greedy_bfs = () =>{
         }
 
         if(j==end_square_vertical && i==end_square_horizonatal){
-            console.log('greedy_bfs finished');
+            console.log('bfs_path finished');
             break;
         }
 
@@ -136,26 +114,11 @@ let greedy_bfs = () =>{
     }
     ;
 
-    // min_distance_node_array.push(f);
-
 }
 
-document.querySelector('#greedy_bfs').addEventListener('click',function(){
-    // if(lock_present){
-    console.log('greedy_bfs start');
-    greedy_bfs();
-    console.log('greedy_bfs end');
+document.querySelector('#bfs_path').addEventListener('click',function(){
+    console.log('bfs_path start');
+    bfs_path();
+    console.log('bfs_path end');
     console.log("min node animation start");
-    // visited_node_animation_function();
-    // display_min_distance_node_animation();
-    // console.log("min node animation end");}
-    // else{
-    //     greedy_bfs();
-    //     animation_function();
-    //     // swap_lock(end_square_id,end_square_vertical,end_square_horizonatal);
-    //     // swap_lock(start_square_id,start_square_vertical,start_square_horizonatal);
-    //     // dijkstra();
-    //     // animation_function();
-    //     // swap_lock(start_square_id,start_square_vertical,start_square_horizonatal);
-    // }
 });

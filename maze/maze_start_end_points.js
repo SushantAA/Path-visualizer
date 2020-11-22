@@ -1,7 +1,3 @@
-// LEFT IN BETWEEN MOVEMENT NOT IMPLIMENTED
-
-
-
 // alert('start end point');
 let start_square_vertical = 7;
 let start_square_horizonatal = 7;
@@ -21,11 +17,6 @@ end_square_element.classList.add('end_square');
 // end
 maze_array[10][20][4]=3;
 
-// start_square_element.addEventListener('click',function(){
-//     start_square_element.classList.remove('start_square');
-//     start_square_element.classList.add('normal_square');
-
-// });
 
 let start_change_click = false;
 

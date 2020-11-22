@@ -13,6 +13,4 @@ let animation_function = () =>{
     visited_node_animation_function();
     console.log('=====================',visited_node_animation_conplete);
 
-    // min_distance_node_array = [];
-    // visited_animate = [];
 }

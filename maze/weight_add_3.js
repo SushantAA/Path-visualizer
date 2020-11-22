@@ -35,7 +35,6 @@ let weight_add_function_t = () =>{
             console.log(j," -- ",i);
             console.log(typeof(j)," -- ",typeof(i));
             if( maze_array[j][i][4] != 2 &&  maze_array[j][i][4] != 3){
-            // maze_array[j][i][5] = 5;
             maze_array[j][i][5] = 3;
             maze_array[j][i][4] = 4;
             this.classList.remove("normal_square");

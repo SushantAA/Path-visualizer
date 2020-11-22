@@ -1,5 +1,5 @@
 // alert('============================= weight add');
-
+// +5
 let weight_add_button = document.querySelector('#weight_add');
 let weight_add_button_click = false;
 weight_add_button.addEventListener('click',function(){
@@ -19,7 +19,7 @@ let weight_add_function = () =>{
         mouse= true;}
     }).mouseover(function(){
         if(mouse===true ){
-        console.log("mouseover   " , this);
+            console.log("mouseover   " , this);
             let id = this.id;
             console.log('move id ======== ',id);
             let k=0;

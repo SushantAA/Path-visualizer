@@ -46,24 +46,7 @@
 	<h1  id = "heading_h" class="row justify-content-around m-2 mb-0 display-4" >PATH  VISUALISER</h1>
 
 	<div id="all_button " class="row justify-content-around">
-	
-	<!-- <button id ="again" class="ui orange button animated image label" >
-		<div class="visible content" style="font-size: medium; padding: 0px; " >  AGAIN</div>
-		<div class="hidden content">
-		<img src="style/animation/image/again.svg" alt="" >
-		</div>
-		 AGAIN -->
-	<!-- </button> -->
-
-	<!-- <div class="ui animated button" tabindex="0">
-		<div class="visible content">AGAIN</div>
-		<div class="hidden content">
-			<img src="style/animation/image/again.svg" alt="" >
-		</div>
-	</div> --> 
-
-	
-	<!-- <button class="ui orange button">Orange</button> -->
+		
 	<button id="again" class="ui orange button image label"><img src="style/animation/image/again.svg" alt="" >AGAIN</button>
 	<button id="path_remove" class="ui green button ">PATH REMOVE</button>
 	<button id="wall_creation" class="ui black button">WALL</button>
@@ -72,28 +55,6 @@
 	<button id="weight_add" class="ui purple button">WEIGHT ( +5 )</button>
 	<button id="weight_add_3" class="ui pink button">WEIGHT ( +3 )</button>
 	
-	<!-- <button id="wall_creation" class="btn btn-dark  ">Wall Creation</button> -->
-	<!-- <button id="startsquare" class="btn btn-outline-primary "> <img src="style/animation/image/blur_circular-24px.svg" alt="" class="button_img">  Start</button> -->
-	<!-- <button id="lock" class="btn btn-danger">lock</button> -->
-	<!-- <button id="endsquare" class="ui image label "> <img src="style/animation/image/filter_tilt_shift-24px.svg" alt="" class="button_img" > End</button> -->
-	<!-- <button id="weight_add" class="btn  ">+5</button> -->
-	<!-- <button id="weight_add_3" class="btn btn-danger ">+3</button> -->
-<!-- 	<button id="trap" class="btn btn-dark  ">trap</button>
-	<button id="trap1" class="btn btn-dark  ">trap1</button> -->
-
-
-	<!-- <select class="ui selection dropdown">
-		<option  value="">Pet</option>
-		<option id="trap_wall" value="0">1</option>
-		<option id="trap_weight" value="1">D]erwerog</option>
-		<option id="trap1" value="2">Bwerwerwerwerird</option>
-		<option id="trap" value="3">RabbwerwerwerSit</option>
-		<option value="4">Squirrel</option>
-		<option value="5">Horse</option>
-		<option value="6">Turtle</option>
-		<option value="7">Parrot</option>
-	</select> -->
-
 	<div class="dropdown">
 	  <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		TRAPS
@@ -105,20 +66,17 @@
 			<button id="trap1" class="btn btn-dark  dropdown-item">TRAPS</button>
 	  </div>
 	</div>
-<!-- 	<button id='bfs' class="btn btn-primary ">DFS</button>
-	<button id='bfs_new'  class="btn btn-success ">BFS</button>
-	<button id='dijkstra'class="btn btn-danger ">Dijkstra</button> -->
 	
 	<div class="dropdown">
 	  <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		ALGORITHMS
 	  </button>
 	  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-	  		<button id='bfs' 		class="btn btn-primary dropdown-item ">DFS</button>
+	  		<button id='dfs' 		class="btn btn-primary dropdown-item ">DFS</button>
 			<button id='bfs_new'  	class="btn btn-success dropdown-item">BFS</button>
 			<button id='dijkstra'	class="btn btn-danger dropdown-item">DIJKSTRA ALGORITHM</button>
-			<button id='astar'		class="btn btn-danger dropdown-item">ASTAR ALGORITHM</button>
-			<button id='greedy_bfs'		class="btn btn-danger dropdown-item">GREEDY BFS</button>
+			<button id='astar'		class="btn btn-danger dropdown-item">A* ALGORITHM</button>
+			<button id='bfs_path'		class="btn btn-danger dropdown-item">BFS PATH</button>
 	  </div>
 	</div>
 	
@@ -130,23 +88,24 @@
 	<div id="maze" ></div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="maze/maze1.js"></script>
+
 	<script type="text/javascript" src="maze/maze_creation.js"></script>
-	<script type="text/javascript" src="maze/maze_graph.js"></script>
 	<script type="text/javascript" src="maze/maze_array_try.js"></script>
 	<script type="text/javascript" src="maze/maze_wall_creation.js"></script>
 	<script type="text/javascript" src="maze/weight_add.js"></script>
 	<script type="text/javascript" src="maze/weight_add_3.js"></script>
 	<script type="text/javascript" src="maze/maze_start_end_points.js"></script>
+	<!--  -->
 	<script type="text/javascript" src="maze/animation_algo_visit.js"></script>
 	<script type="text/javascript" src="maze/animation_min_node_path.js"></script>
 	<script type="text/javascript" src="maze/animate_button.js"></script>
-	<script type="text/javascript" src="maze/lock.js"></script>
-	<script type="text/javascript" src="maze/path_algorithms/bfs.js"></script>
+	<!-- <script type="text/javascript" src="maze/lock.js"></script> -->
+	<!--  -->
+	<script type="text/javascript" src="maze/path_algorithms/dfs.js"></script>
 	<script type="text/javascript" src="maze/path_algorithms/bfs_new.js"></script>
 	<script type="text/javascript" src="maze/path_algorithms/dijkstra.js"></script>
 	<script type="text/javascript" src="maze/path_algorithms/astar.js"></script>
-	<script type="text/javascript" src="maze/path_algorithms/greedy_bfs.js"></script>
+	<script type="text/javascript" src="maze/path_algorithms/bfs_path.js"></script>
 	<script type="text/javascript" src="maze/again.js"></script>
 	<script type="text/javascript" src="maze/algo_remove.js"></script>
 	<script type="text/javascript" src="maze/traps/basic_random_trap.js"></script>

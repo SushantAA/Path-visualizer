@@ -20,10 +20,8 @@ let find_min_distance = (arr,distance) =>{
 let dijkstra = () =>{
     let distance = new Map();
     let parent = new Map();
-    // let arr = [];
 
     let id = make_id(start_square_vertical,start_square_horizonatal);
-    // h.set(id,true);
     console.log('start id = ',id);
     let arr = [id];
     distance.set(id,0);
@@ -126,28 +124,13 @@ let dijkstra = () =>{
         let f = parent.get(tid);
        console.log("node id = ",f);
         tid = f;
-       
         min_distance_node_array.push(f);
     }
 
 }
 
 document.querySelector('#dijkstra').addEventListener('click',function(){
-    // if(lock_present){
     console.log('dijkstra start');
     dijkstra();
     console.log('dijkstra end');
-    // console.log("min node animation start");
-    // visited_node_animation_function();
-    // display_min_distance_node_animation();
-    // console.log("min node animation end");}
-    // else{
-    //     dijkstra();
-    //     animation_function();
-    //     // swap_lock(end_square_id,end_square_vertical,end_square_horizonatal);
-    //     // swap_lock(start_square_id,start_square_vertical,start_square_horizonatal);
-    //     // dijkstra();
-    //     // animation_function();
-    //     // swap_lock(start_square_id,start_square_vertical,start_square_horizonatal);
-    // }
 });

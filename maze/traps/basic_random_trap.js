@@ -16,8 +16,6 @@ let create_random_trap = () => {
             
             document.getElementById(tid).classList.remove('normal_square');
             document.getElementById(tid).classList.add('wall_square');
-            // tid.classList.remove('normal_square');
-            // tid.classList.add('wall_square');
             count_idx_wall = count_idx_wall +1;
         }}
     }
@@ -35,8 +33,6 @@ let create_random_trap = () => {
             
             document.getElementById(tid).classList.remove('normal_square');
             document.getElementById(tid).classList.add('weight_add_square');
-            // tid.classList.remove('normal_square');
-            // tid.classList.add('wall_square');
             count_idx_weight = count_idx_weight +1;
         }}
     }
@@ -56,8 +52,6 @@ let create_random_trap = () => {
             
             document.getElementById(tid).classList.remove('normal_square');
             document.getElementById(tid).classList.add('weight_add_square_t');
-            // tid.classList.remove('normal_square');
-            // tid.classList.add('wall_square');
             count_idx_weight = count_idx_weight +1;
         }}
     }
