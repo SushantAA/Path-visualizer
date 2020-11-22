@@ -19,7 +19,7 @@ let maze_array_first_fill = () =>{
             // 2 ->down
             // 3 ->left
             // 4 -> 1 ->  wall , 2->end , 3->start , 4 -> weighted
-            // 5 -> distance , initial =0
+            // 5 -> distance , initial =1
         }
     }
     console.log(maze_array);

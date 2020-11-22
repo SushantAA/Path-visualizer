@@ -23,6 +23,10 @@ let css_class_reset = () =>{
 document.querySelector('#again').addEventListener('click',function(){
     console.log('again begin');
     maze_array_first_fill();
+    maze_array[start_square_vertical][start_square_vertical] = 3;
+    maze_array[end_square_vertical][end_square_horizonatal] = 2;
+    console.log('start_square_vertical = ', start_square_vertical , 'start_square_vertical = ',start_square_vertical);
+    console.log('end_square_vertical = ',end_square_vertical,'end_square_horizonatal = ',end_square_horizonatal);
     css_class_reset();
     min_distance_node_array = [];
     visited_animate = [];
