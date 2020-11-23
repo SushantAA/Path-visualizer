@@ -26,7 +26,7 @@ let display_min_distance_node_animation = () =>{
         document.getElementById(id).classList.add('min_node_square');
         i = i+1;
         
-    },50);
+    },algo_speed);
 
 
 }

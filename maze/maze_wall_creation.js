@@ -35,7 +35,7 @@ let wall_creation_function = () =>{
             j = parseInt(j);
             console.log(j," -- ",i);
             console.log(typeof(j)," -- ",typeof(i));
-            if( maze_array[j][i][4] != 2 &&  maze_array[j][i][4] != 3){
+            if( maze_array[j][i][4] == 0){
             maze_array[j][i][4] = 1;
             this.classList.remove("normal_square");
             this.classList.add("wall_square");}

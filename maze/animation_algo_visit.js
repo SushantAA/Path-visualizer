@@ -32,6 +32,6 @@ let visited_node_animation_function =()=>{
         }
         i = i+1;
         
-    },50);
+    },algo_speed);
 
 }

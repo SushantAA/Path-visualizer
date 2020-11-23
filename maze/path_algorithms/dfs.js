@@ -65,7 +65,10 @@ let dfs = (start_vertical,start_horizontal,distance,visited) =>{
 
 document.querySelector('#dfs').addEventListener('click',function(){
     let rere = new Map();
-    dfs(start_square_vertical,start_square_horizonatal,0,rere);
+    console.log('dfs start');
+    shortest_distance = 100000;
     dfs_complete = false;
+    dfs(start_square_vertical,start_square_horizonatal,0,rere);
+    
 });
 
