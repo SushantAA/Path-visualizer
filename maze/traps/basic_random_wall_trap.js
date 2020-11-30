@@ -21,7 +21,6 @@ let create_random_wall_trap = () => {
         }}
     }
 
-
 }
 
 document.querySelector('#trap_wall').addEventListener('click',function(){
