@@ -1,6 +1,5 @@
 // alert('speed');
 
-
 let algo_speed = 50;
 
 document.getElementById('fast').addEventListener('click',function(){

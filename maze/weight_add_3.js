@@ -7,6 +7,7 @@ weight_add_button_t.addEventListener('click',function(){
     weight_add_button_click = false;
     weight_add_function_t();
 });
+
 // weight add marking
 let weight_add_function_t = () =>{
     let mouse = false;
