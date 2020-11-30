@@ -1,3 +1,5 @@
+// alert('========== +3 weight add ');
+// +3
 let weight_add_button_t = document.querySelector('#weight_add_3');
 let weight_add_button_t_click = false;
 weight_add_button_t.addEventListener('click',function(){
