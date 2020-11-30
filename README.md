@@ -1,32 +1,20 @@
 # Path-visualizer
 https://sushantaa.github.io/Path-visualizer/index.html
-## Use google crome for viewing the website . I am working on this bug . 
-### currently it is under debugging so initially their are lot of alert statements just click ok and ignore them :)
+## Use google crome for viewing the website . I am working on to resolve this bug .
+
 HOW TO USE
 
-ADD RANDOM WALLS AND WEIGHTS
+1)ADD RANDOM WALLS BY SELECTION WALL BUTTON AND THEN DRAGGING OVER GRID AND WEIGHTS
 
-OR ADD RANDOM TRAPS
- 
- 
+2)OR ADD RANDOM TRAPS (FROM TRAP BUTTON DROPDOWN MENU)
 
-OR ADD OUR SELF CREATED TRAP (TRAPS OPTION)
- 
+3)OR ADD OUR SELF CREATED TRAP (TRAPS OPTION)
 
-SHIFT STARTING AND ENDING POINT USING START END BUTTONS
- 
+4)SHIFT STARTING AND ENDING POINT USING START END BUTTONS
 
- 
+5)MODIFY SPEED - (SLOW,MEDIUM,FAST)
 
-MODIFY SPEED
- 
+6)CHOOSE FROM THE ALGORITHMS TO VISUALISE THAT ALGORITHM AND CLICK ON ANIMATE
 
-CHOOSE ALGORITHM TO VISUALISE AND CLICK ON ANIMATE
- 
+7)AND THEN VISUALISE VARIOUS GRAPH ALGORITHMS 
 
- 
-
-AND THEN VISUALISE
- 
-
-A * HERE (WEIGHTED)
