@@ -17,8 +17,8 @@ let display_min_distance_node_animation = () =>{
             min_distance_node_array = [];
             min_animatin_complete = true;
             return;
-        start_square_element.classList.remove('visited_square');
-        start_square_element.classList.add('start_square');
+            start_square_element.classList.remove('visited_square');
+            start_square_element.classList.add('start_square');
     }
         
         document.getElementById(id).classList.remove('weight_add_square_visited');

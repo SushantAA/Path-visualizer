@@ -1,4 +1,5 @@
 // alert('array');
+
 let maze_array = new Array(vertical_height);
 for(let i=0;i<vertical_height;i++){
     let maze_horizontal_array = new Array(horizontal_width);

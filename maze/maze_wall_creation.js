@@ -8,6 +8,7 @@ wall_creation_button.addEventListener('click',function(){
     weight_add_button_t_click = false;
     wall_creation_function();
 });
+
 // wall marking
 let wall_creation_function = () =>{
     let mouse = false;

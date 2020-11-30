@@ -1,6 +1,5 @@
 // alert('bfs_path');
 
-
 let bfs_path = () =>{
     let distance = new Map();
     let parent = new Map();
@@ -113,7 +112,6 @@ let bfs_path = () =>{
         min_distance_node_array.push(f);
     }
     
-
 }
 
 document.querySelector('#bfs_path').addEventListener('click',function(){
