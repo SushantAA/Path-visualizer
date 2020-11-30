@@ -11,11 +11,11 @@ let end_square_element = document.getElementById(end_square_id);
 start_square_element.classList.remove('normal_square');
 start_square_element.classList.add('start_square');
 // start
-maze_array[0][0][4]=2;
+maze_array[0][0][4]=3;
 end_square_element.classList.remove('normal_square');
 end_square_element.classList.add('end_square');
 // end
-maze_array[10][20][4]=3;
+maze_array[9][20][4]=2;
 
 
 let start_change_click = false;

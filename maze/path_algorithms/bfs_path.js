@@ -1,6 +1,5 @@
 // alert('bfs_path');
 
-
 let bfs_path = () =>{
     let distance = new Map();
     let parent = new Map();
@@ -104,7 +103,7 @@ let bfs_path = () =>{
 
     let tid = make_id(end_square_vertical,end_square_horizonatal);
     console.log('final  tid = ',tid);
-    min_distance_node_array.push(end_square_id)
+    min_distance_node_array.push(end_square_id);
     while(parent.get(tid)!='e'){
         let f = parent.get(tid);
        console.log("node id = ",f);
@@ -112,8 +111,7 @@ let bfs_path = () =>{
        
         min_distance_node_array.push(f);
     }
-    ;
-
+    
 }
 
 document.querySelector('#bfs_path').addEventListener('click',function(){

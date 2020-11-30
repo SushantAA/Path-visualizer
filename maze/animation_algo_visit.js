@@ -21,8 +21,8 @@ let visited_node_animation_function =()=>{
             console.log('visited node animation complete = ',visited_node_animation_conplete);
             display_min_distance_node_animation();
               return;
-          start_square_element.classList.remove('visited_square');
-          start_square_element.classList.add('start_square');
+            start_square_element.classList.remove('visited_square');
+            start_square_element.classList.add('start_square');
        }
     
         if(document.getElementById(id).classList.contains('weight_add_square') || document.getElementById(id).classList.contains('weight_add_square_t')){

@@ -68,15 +68,6 @@ div div{
     display: inline-block;
 }
 
-
-
-/* #weight_add{
-    background-color: goldenrod;
-    border: 5px solid aqua;
-    color: white;
-    display: inline-block;
-} */
-
 .move_square{
     background-color: yellow;
     width: 2.2rem;
@@ -130,7 +121,7 @@ div div{
     /* background-image: url(image-source/5.svg); */
     background-image: url(animation/image/filter_5-24px.svg);
     /* background-repeat: no-repeat;
-  background-attachment: fixed; */
+    background-attachment: fixed; */
  
     /* background-color: azure; */
     border: 1px solid blueviolet;
@@ -155,7 +146,6 @@ div div{
 
 .weight_add_square_visited{
     /* background-color:  #a7ff83; */
-    
     
     /* background-image: url(animation/image/filter_5-24px.svg); */
     background-color: #43dde6;
