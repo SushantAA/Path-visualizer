@@ -2,15 +2,15 @@
 <html>
 <head>
 	<title>Visualiser</title>
-	<link rel="stylesheet" type="text/css" href="style/maze_creation.css">
-	<link rel="stylesheet" type="text/css" href="style/rest.css">
-	<link rel="stylesheet" type="text/css" href="style/animation/move_squre_animation.css">
-	<link rel="stylesheet" type="text/css" href="style/animation/visited_square_animation.css">
-	<link rel="stylesheet" type="text/css" href="style/animation/wall_creation_animation.css">
-	<link rel="stylesheet" type="text/css" href="style/animation/min_node_square.css">
-	<link rel="stylesheet" type="text/css" href="style/animation/weight_add_animation.css">
-	<link rel="stylesheet" type="text/css" href="style/animation/weight_add_square_t_animation.css">
-	<link rel="stylesheet" type="text/css" href="style/animation/weight_add_square_visited_animation.css">
+	<link rel="stylesheet" type="text/css" href="Code/style/maze_creation.css">
+	<link rel="stylesheet" type="text/css" href="Code/style/rest.css">
+	<link rel="stylesheet" type="text/css" href="Code/style/animation/move_squre_animation.css">
+	<link rel="stylesheet" type="text/css" href="Code/style/animation/visited_square_animation.css">
+	<link rel="stylesheet" type="text/css" href="Code/style/animation/wall_creation_animation.css">
+	<link rel="stylesheet" type="text/css" href="Code/style/animation/min_node_square.css">
+	<link rel="stylesheet" type="text/css" href="Code/style/animation/weight_add_animation.css">
+	<link rel="stylesheet" type="text/css" href="Code/style/animation/weight_add_square_t_animation.css">
+	<link rel="stylesheet" type="text/css" href="Code/style/animation/weight_add_square_visited_animation.css">
 
 	<!-- Css bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -47,11 +47,11 @@
 
 	<div id="all_button " class="row justify-content-around">
 		
-	<button id="again" class="ui orange button image label"><img src="style/animation/image/again.svg" alt="" >AGAIN</button>
+	<button id="again" class="ui orange button image label"><img src="Code/style/animation/image/again.svg" alt="" >AGAIN</button>
 	<button id="path_remove" class="ui green button ">PATH REMOVE</button>
 	<button id="wall_creation" class="ui black button">WALL</button>
-	<button id="startsquare" class="ui blue button image label"><img src="style/animation/image/blur_circular-24px.svg" alt="" >START</button>
-	<button id="endsquare" class="ui violet button image label"><img src="style/animation/image/filter_tilt_shift-24px.svg" alt="" class="button_img" >END</button>
+	<button id="startsquare" class="ui blue button image label"><img src="Code/style/animation/image/blur_circular-24px.svg" alt="" >START</button>
+	<button id="endsquare" class="ui violet button image label"><img src="Code/style/animation/image/filter_tilt_shift-24px.svg" alt="" class="button_img" >END</button>
 	<button id="weight_add" class="ui purple button">WEIGHT ( +5 )</button>
 	<button id="weight_add_3" class="ui pink button">WEIGHT ( +3 )</button>
 	
@@ -87,7 +87,7 @@
 			<button id='bfs_new'  	class="btn btn-success dropdown-item">BFS</button>
 			<button id='dijkstra'	class="btn btn-danger dropdown-item">DIJKSTRA ALGORITHM</button>
 			<button id='astar'		class="btn btn-danger dropdown-item">A* ALGORITHM</button>
-			<button id='bfs_path'		class="btn btn-danger dropdown-item">BFS PATH</button>
+			<button id='bfs_path'	class="btn btn-danger dropdown-item">BFS PATH</button>
 	  </div>
 	</div>
 	
@@ -100,29 +100,29 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 
-	<script type="text/javascript" src="maze/maze_creation.js"></script>
-	<script type="text/javascript" src="maze/maze_array_try.js"></script>
-	<script type="text/javascript" src="maze/maze_wall_creation.js"></script>
-	<script type="text/javascript" src="maze/weight_add.js"></script>
-	<script type="text/javascript" src="maze/weight_add_3.js"></script>
-	<script type="text/javascript" src="maze/maze_start_end_points.js"></script>
+	<script type="text/javascript" src="Code/maze/maze_creation.js"></script>
+	<script type="text/javascript" src="Code/maze/maze_array_try.js"></script>
+	<script type="text/javascript" src="Code/maze/maze_wall_creation.js"></script>
+	<script type="text/javascript" src="Code/maze/weight_add.js"></script>
+	<script type="text/javascript" src="Code/maze/weight_add_3.js"></script>
+	<script type="text/javascript" src="Code/maze/maze_start_end_points.js"></script>
 	<!--  -->
-	<script type="text/javascript" src="maze/speed.js"></script>
-	<script type="text/javascript" src="maze/animation_algo_visit.js"></script>
-	<script type="text/javascript" src="maze/animation_min_node_path.js"></script>
-	<script type="text/javascript" src="maze/animate_button.js"></script>
+	<script type="text/javascript" src="Code/maze/speed.js"></script>
+	<script type="text/javascript" src="Code/maze/animation_algo_visit.js"></script>
+	<script type="text/javascript" src="Code/maze/animation_min_node_path.js"></script>
+	<script type="text/javascript" src="Code/maze/animate_button.js"></script>
 	<!--  -->
-	<script type="text/javascript" src="maze/path_algorithms/dfs.js"></script>
-	<script type="text/javascript" src="maze/path_algorithms/bfs_new.js"></script>
-	<script type="text/javascript" src="maze/path_algorithms/dijkstra.js"></script>
-	<script type="text/javascript" src="maze/path_algorithms/astar.js"></script>
-	<script type="text/javascript" src="maze/path_algorithms/bfs_path.js"></script>
-	<script type="text/javascript" src="maze/again.js"></script>
-	<script type="text/javascript" src="maze/algo_remove.js"></script>
-	<script type="text/javascript" src="maze/traps/basic_random_trap.js"></script>
-	<script type="text/javascript" src="maze/traps/basic_random_wall_trap.js"></script>
-	<script type="text/javascript" src="maze/traps/basic_random_weight_trap.js"></script>
-	<script type="text/javascript" src="maze/traps/trap1.js"></script>
+	<script type="text/javascript" src="Code/maze/path_algorithms/dfs.js"></script>
+	<script type="text/javascript" src="Code/maze/path_algorithms/bfs_new.js"></script>
+	<script type="text/javascript" src="Code/maze/path_algorithms/dijkstra.js"></script>
+	<script type="text/javascript" src="Code/maze/path_algorithms/astar.js"></script>
+	<script type="text/javascript" src="Code/maze/path_algorithms/bfs_path.js"></script>
+	<script type="text/javascript" src="Code/maze/again.js"></script>
+	<script type="text/javascript" src="Code/maze/algo_remove.js"></script>
+	<script type="text/javascript" src="Code/maze/traps/basic_random_trap.js"></script>
+	<script type="text/javascript" src="Code/maze/traps/basic_random_wall_trap.js"></script>
+	<script type="text/javascript" src="Code/maze/traps/basic_random_weight_trap.js"></script>
+	<script type="text/javascript" src="Code/maze/traps/trap1.js"></script>
 
 
 	<!-- JS, Popper.js, and jQuery  Bootstrap -->
