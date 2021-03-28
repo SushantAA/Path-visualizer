@@ -2,6 +2,8 @@
 https://sushantaa.github.io/Path-visualizer/index.html
 ## Use google crome for viewing the website . I am working on to resolve this bug .
 
+![path_visualiser](https://github.com/SushantAA/Path-visualizer/blob/main/path_visualiser.gif)
+
 HOW TO USE
 
 1)ADD RANDOM WALLS BY SELECTION WALL BUTTON AND THEN DRAGGING OVER GRID AND WEIGHTS
