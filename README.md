@@ -1,6 +1,6 @@
 # Path-visualizer
 ## A Website to understand Graph Algrithms in an interactive way 😄 👨‍🎓 📚
-https://sushantaa.github.io/Path-visualizer/index.html
+## Link - https://sushantaa.github.io/Path-visualizer/index.html
 ## Use google crome for viewing the website . I am working on to resolve this bug .
 
 ![path_visualiser](https://github.com/SushantAA/Path-visualizer/blob/main/path_visualiser.gif)
