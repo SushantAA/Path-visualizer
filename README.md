@@ -1,4 +1,5 @@
 # Path-visualizer
+## A Website to understand Graph Algrithms in an interactive way 😄 👨‍🎓 📚
 https://sushantaa.github.io/Path-visualizer/index.html
 ## Use google crome for viewing the website . I am working on to resolve this bug .
 
