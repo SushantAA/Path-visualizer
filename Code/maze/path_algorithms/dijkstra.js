@@ -34,6 +34,7 @@ let dijkstra = () =>{
         let  j = x[0] ,i = x[1] ;
         // j ->vertical , i->horizontal
         let d = distance.get(id);
+        maze_array[j][i][6] = d;
         console.log('j = ',j ,' , i = ',i);
 
         visited_animate.push(f);
@@ -42,8 +43,6 @@ let dijkstra = () =>{
             console.log('dijkstra finished');
             break;
         }
-    
-        
 
         if(j>0){
             let tid =make_id(j-1,i);

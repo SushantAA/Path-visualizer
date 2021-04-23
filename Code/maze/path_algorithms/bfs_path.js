@@ -19,6 +19,7 @@ let bfs_path = () =>{
         let  j = x[0] ,i = x[1] ;
         // j ->vertical , i->horizontal
         let d = distance.get(id);
+        maze_array[j][i][6] = d;
         console.log('j = ',j ,' , i = ',i);
         visited_animate.push(f);
         

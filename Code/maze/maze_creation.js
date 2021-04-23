@@ -14,6 +14,7 @@ let maze_creation = () =>{
         let tx='';
         for(let i=0;i<horizontal_width;i++){ 
             let id = j.toString() + ',' + i.toString();
+            // let x = '<div id =\"'+ id +'\" class="normal_square a" aria-label="MO" ></div>';
             let x = '<div id =\"'+ id +'\" class="normal_square" ></div>';
             tx = tx+ x; 
         }

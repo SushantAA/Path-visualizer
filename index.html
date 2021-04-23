@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Visualiser</title>
+	<link rel="stylesheet" href="hint.min.css" />
 	<link rel="stylesheet" type="text/css" href="Code/style/maze_creation.css">
 	<link rel="stylesheet" type="text/css" href="Code/style/rest.css">
 	<link rel="stylesheet" type="text/css" href="Code/style/animation/move_squre_animation.css">
@@ -11,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="Code/style/animation/weight_add_animation.css">
 	<link rel="stylesheet" type="text/css" href="Code/style/animation/weight_add_square_t_animation.css">
 	<link rel="stylesheet" type="text/css" href="Code/style/animation/weight_add_square_visited_animation.css">
+	<link rel="stylesheet" type="text/css" href="Code/style/animation/tool_tip.css">
 
 	<!-- Css bootstrap -->
 	<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -43,7 +45,7 @@
 
 
 	<div class="container" >
-	<h1  id = "heading_h" class="row justify-content-around m-2 mb-0 display-4" >PATH  VISUALISER</h1>
+	<h1  id = "heading_h" class="row justify-content-around m-2 mb-0 display-4" >VISUALGRAPH</h1>
 
 	<div id="all_button " class="row justify-content-around">
 		
@@ -97,7 +99,7 @@
 	</div>
 	
 	<div id="maze" ></div>
-
+	<div id="end_distance" class="row justify-content-around m-2 mb-0 display-4" ></div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 
 	<script type="text/javascript" src="Code/maze/maze_creation.js"></script>

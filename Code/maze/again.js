@@ -11,10 +11,12 @@ let css_class_reset = () =>{
                 document.getElementById(id).classList.remove('weight_add_square');
                 document.getElementById(id).classList.remove('weight_add_square_visited');
                 document.getElementById(id).classList.remove('weight_add_square_t');
-                document.getElementById(id).classList.add('normal_square');  
+                document.getElementById(id).classList.add('normal_square');
+                document.getElementById(id).classList.remove('a');
+                document.getElementById(id).removeAttribute('aria-label');
         }
     }
-
+    document.getElementById('end_distance').innerHTML = '';
     weight_add_button_t_click = false;
     weight_add_button_click = false
     wall_creation_button_click = false
