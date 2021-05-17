@@ -6,7 +6,7 @@ let visited_node_animation_conplete = false;
 
 let visited_node_animation_function =()=>{
 
-  console.log('chal raha hu bsdk');
+  console.log('working....');
 
   console.log('maze_array = ');
   console.log(maze_array);
@@ -42,7 +42,7 @@ let visited_node_animation_function =()=>{
         if(document.getElementById(id).classList.contains('weight_add_square') || document.getElementById(id).classList.contains('weight_add_square_t')){
           document.getElementById(id).classList.add('weight_add_square_visited');
         }else{
-        document.getElementById(id).classList.add('visited_square');
+          document.getElementById(id).classList.add('visited_square');
         }
 
         // document.getElementById(id).classList.add('hint--always');
